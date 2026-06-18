@@ -311,6 +311,13 @@
     color: var(--cc-btn-secondary-hover-bg);
     color: #ff3f2c !important;
 }
+#s-c-bn:active,
+#s-c-bn:hover {
+    &::before,
+    &::after {
+        background: #ff3f2c;
+    }
+}
 #s-cnt {
     position: fixed;
     top: 0;
@@ -534,8 +541,8 @@
 #s-bns button:first-child:hover,
 #c-bns.swap button:last-child:active,
 #c-bns.swap button:last-child:hover {
-    background: #1d2e38;
-    background: var(--cc-btn-primary-hover-bg);
+    background: transparent;
+    color: #ff3f2c;
 }
 #c-bns.swap button:first-child:active,
 #c-bns.swap button:first-child:hover {
@@ -1309,4 +1316,8 @@ html.force--consent.show--consent body {
     justify-content: center;
     font-size: 16px;
     font-family: sans-serif;
+}
+.cc_div .b-bn .b-tl.exp::before,
+.cc_div .act .b-bn .b-tl.exp::before {
+    border-color: #1c1f2a;
 }
