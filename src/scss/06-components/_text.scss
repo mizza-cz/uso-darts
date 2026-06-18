@@ -1,0 +1,113 @@
+:is(
+    .h1,
+    .h2,
+    .h3,
+    .h4,
+    .h5,
+    .h6,
+    .o-content h1,
+    .o-content h2,
+    .o-content h3,
+    .o-content h4,
+    .o-content h5,
+    .o-content h6
+  ) {
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+.h1,
+.o-content h1 {
+  font-size: 40px;
+  line-height: 56px;
+  @include media-breakpoint-down(lg) {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+.h2,
+.o-content h2 {
+  font-size: 32px;
+  line-height: 40px;
+  @include media-breakpoint-down(lg) {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+
+.h3,
+.o-content h3 {
+  font-size: 28px;
+  line-height: 34px;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.h4,
+.o-content h4 {
+  font-size: 24px;
+  line-height: 34px;
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.h5,
+.o-content h5 {
+  font-size: 20px;
+  line-height: 28px;
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.h6,
+.o-content h6 {
+  font-size: 18px;
+  line-height: 26px;
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.perex {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+}
+// Typography
+
+.text-base-xs {
+  font-size: 12px;
+  line-height: 20px;
+}
+.text-bold-xs {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.text-bold-sm {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.text-base-sm {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.text-base-md {
+  font-size: 16px;
+}
+
+.text-base-lg {
+  font-size: 18px;
+}
+.text-base-xl {
+  font-size: 20px;
+}

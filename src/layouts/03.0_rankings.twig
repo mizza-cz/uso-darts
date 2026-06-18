@@ -1,0 +1,116 @@
+{% extends "@components/base/base.twig" %} {% set title = "03.0_rankings" %} {%
+block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary">Žebříčky</h1>
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="h4 text-primary mb-6">Republikové žebříčky</h2>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Název žebříčku</th>
+              <th style="width: 104px" class="text-center">Hráčů</th>
+              <th style="width: 80px" class="text-center">A</th>
+              <th style="width: 80px" class="text-center">B</th>
+              <th style="width: 80px" class="text-center">C</th>
+              <th style="width: 80px" class="text-center">D</th>
+              <th style="width: 104px" class="text-center">Turnajů</th>
+              <th style="width: 180px">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Windson Cup - ČP mužů 2026
+                </a>
+              </td>
+              <td class="text-center">9250</td>
+              <td class="text-center">2</td>
+              <td class="text-center">58</td>
+              <td class="text-center">6399</td>
+              <td class="text-center">0</td>
+              <td class="text-center">6459</td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail žebříčku
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <a class="d-block w-100 mb-10" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+      <h3 class="h4 text-primary mb-6">International Dart Federation</h3>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Název žebříčku</th>
+              <th style="width: 104px" class="text-center">Hráčů</th>
+              <th style="width: 80px" class="text-center">A</th>
+              <th style="width: 80px" class="text-center">B</th>
+              <th style="width: 80px" class="text-center">C</th>
+              <th style="width: 80px" class="text-center">D</th>
+              <th style="width: 104px" class="text-center">Turnajů</th>
+              <th style="width: 180px">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Windson Cup - ČP mužů 2026
+                </a>
+              </td>
+              <td class="text-center">9250</td>
+              <td class="text-center">2</td>
+              <td class="text-center">58</td>
+              <td class="text-center">6399</td>
+              <td class="text-center">0</td>
+              <td class="text-center">6459</td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail žebříčku
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

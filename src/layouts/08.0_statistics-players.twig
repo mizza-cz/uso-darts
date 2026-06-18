@@ -1,0 +1,153 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"08.0_statistics-players" %} {% block main %} {% include
+"@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary">Statistika hráčů: 2. Jihočeská liga A</h1>
+      </div>
+    </div>
+    <div class="container">
+      <form
+        class="filterForm d-flex flex-sm-row flex-column align-items-center gap-4 flex-wrap mb-10"
+      >
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterYear">
+            <option>2025/2026</option>
+            <option>2024/2025</option>
+            <option>2023/2024</option>
+            <option>2022/2023</option>
+          </select>
+        </div>
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterCategory">
+            <option>Všechna družstva</option>
+            <option>kategorie 1</option>
+            <option>kategorie řády</option>
+            <option>Soutěžní kategorie</option>
+          </select>
+        </div>
+      </form>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th rowspan="2">
+                <span class="d-lg-block d-none">Pořadí</span>
+                <span class="d-lg-none d-block">P</span>
+              </th>
+              <th rowspan="2">Hráč</th>
+              <th rowspan="2">LKH</th>
+
+              <th colspan="4" class="text-center">Zápasy</th>
+              <th colspan="3" class="text-center">Legy</th>
+
+              <th colspan="2" class="text-center">Náhozy 95+</th>
+              <th colspan="2" class="text-center">Náhozy 133+</th>
+              <th colspan="2" class="text-center">Náhozy 170+</th>
+
+              <th colspan="4" class="text-center">Zavření v kole</th>
+            </tr>
+
+            <tr>
+              <th class="text-center">%</th>
+              <th class="text-center">C</th>
+              <th class="text-center">O</th>
+              <th class="text-center">V</th>
+
+              <th class="text-center">%</th>
+              <th class="text-center">O</th>
+              <th class="text-center">V</th>
+
+              <th class="text-center">Poč</th>
+              <th class="text-center">Pr/leg</th>
+
+              <th class="text-center">Poč</th>
+              <th class="text-center">Pr/leg</th>
+
+              <th class="text-center">Poč</th>
+              <th class="text-center">Pr/leg</th>
+
+              <th class="text-center">6.</th>
+              <th class="text-center">5.</th>
+              <th class="text-center">4.</th>
+              <th class="text-center">3.</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..20 %}
+            <tr>
+              <td>1.</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div>
+                    <a class="fw-bold text-secondary" href="#">
+                      Hoffmann Martin
+                    </a>
+                    <div class="text-tertiary">Royal Darts Team Ivančice</div>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">58,5</td>
+              <td class="text-center">63,38</td>
+              <td class="text-center">80</td>
+              <td class="text-center">71</td>
+              <td class="text-center">45</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">103</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">32</td>
+              <td class="text-center">4</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+            </tr>
+
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <nav class="navPagination mt-8 mb-10" aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-left.svg" %}
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-right.svg" %}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

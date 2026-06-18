@@ -1,0 +1,17 @@
+<section class="mt-xl-10 mb-10">
+  <div class="container">
+    <div class="row g-6">
+      {% for i in 1..3 %}
+      <div class="col-lg-4">
+        {% include "@components/postCard/postCard.twig" %}
+      </div>
+      {% endfor %}
+    </div>
+    <a
+      href="#"
+      class="button-secondary justify-content-end mt-lg-11 mt-6 ms-auto"
+    >
+      Všechny články {% include "@images/chevron-right.svg" %}
+    </a>
+  </div>
+</section>

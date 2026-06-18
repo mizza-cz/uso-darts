@@ -1,0 +1,66 @@
+/*! purgecss start ignore */
+.container {
+  max-width: 99rem !important;
+  width: 100% !important;
+  padding: 0 16px;
+  @include media-breakpoint-up(lg) {
+    padding: 0 24px;
+  }
+}
+.font-display {
+  font-family: var(--font-display);
+}
+.bg-white {
+  background: var(--color-white) !important;
+}
+.bg-black {
+  background-color: var(--color-black) !important;
+}
+.bg-gray {
+  background-color: var(--color-gray) !important;
+}
+.bg-primary {
+  background: var(--color-primary) !important;
+}
+
+.text-white {
+  color: var(--color-white) !important;
+}
+.text-primary {
+  color: var(--color-primary) !important;
+}
+.text-secondary {
+  color: var(--color-secondary) !important;
+}
+.text-tertiary {
+  color: var(--color-tertiary) !important;
+}
+.hover-outline a,
+a.hover-outline {
+  text-decoration: underline;
+  transition: all 0.25s ease;
+  text-decoration-color: transparent;
+  &:hover {
+    text-decoration-color: inherit;
+  }
+}
+
+.rounded-circle {
+  border-radius: 100%;
+}
+.border-bottom-gray-2 {
+  border-bottom: 2px solid var(--color-gray);
+}
+.border-white-1 {
+  border: 1px solid var(--color-white);
+}
+.space-nowrap {
+  white-space: nowrap;
+}
+.space-wrap {
+  white-space: wrap;
+}
+.object-position-top {
+  object-position: top;
+}
+/*! purgecss end ignore */

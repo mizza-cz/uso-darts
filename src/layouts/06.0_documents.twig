@@ -1,0 +1,119 @@
+{% extends "@components/base/base.twig" %} {% set title = "06.0_documents" %} {%
+block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <div
+          class="d-flex gap-4 justify-content-between align-items-center flex-wrap"
+        >
+          <h1 class="h2 text-secondary">Archiv dokumentů</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form
+        class="filterForm d-flex flex-sm-row flex-column align-items-center gap-4 flex-wrap mb-10"
+      >
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterCategory">
+            <option>Soutěžní řády</option>
+            <option>kategorie 1</option>
+            <option>kategorie řády</option>
+            <option>Soutěžní kategorie</option>
+          </select>
+        </div>
+        <div class="filterForm-search">
+          <input
+            class="filterForm-search__input"
+            placeholder="Hledat podle výrazu nebo slov  "
+            type="text"
+          />
+          <button class="filterForm-search__icon">
+            <img
+              src="images/ico/search.svg"
+              width="16"
+              height="16"
+              alt="search"
+              class="object-fit-contain"
+            />
+          </button>
+        </div>
+        <button class="button-secondary w-sm-auto w-100">
+          Hledat {% include "@images/chevron-right.svg" %}
+        </button>
+        <button class="filterForm-reset" type="reset">
+          {% include "@images/x-close.svg" %} Resetovat filtr
+        </button>
+      </form>
+      <div class="table-responsive">
+        <table class="table tableDocs">
+          <tbody>
+            <tr>
+              <th>Datum</th>
+              <th>Název dokumentu</th>
+              <th>Formát</th>
+              <th>Kategorie</th>
+              <th>Stáhnout</th>
+            </tr>
+          </tbody>
+          <tbody>
+            {% for i in 1..20 %}
+            <tr>
+              <td>19. 4. 2026</td>
+              <td>
+                <a href="#" class="text-secondary fw-bold shortText">
+                  Úvodní kolo letošní Jarní ligy přilákalo nejvyšší počet
+                  účastníků v historii UŠO
+                </a>
+              </td>
+              <td>.pdf (435 kB)</td>
+              <td>Soutěžní řády</td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Stáhnout dokument
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <nav class="navPagination mt-8 mb-10" aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-left.svg" %}
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-right.svg" %}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

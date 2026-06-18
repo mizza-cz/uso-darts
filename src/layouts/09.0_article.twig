@@ -1,0 +1,37 @@
+{% extends "@components/base/base.twig" %} {% set title = "09.0_article" %} {%
+block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10 mt-xl-10">
+    <div class="container">
+      <div class="row g-6">
+        <div class="col-lg-8">
+          {% include "@components/article/article.twig" %}
+          <a class="d-block w-100" href="#">
+            <img
+              class="w-100 object-fit-cover"
+              src="images/content/pub.webp"
+              alt="pub"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <aside class="d-grid gap-6">
+            <a class="d-block" href="#" target="_blank">
+              <img
+                class="object-fit-cover"
+                width="100%"
+                height="100%"
+                srcset="https://picsum.photos/464/160"
+                alt=""
+              />
+            </a>
+            {% include "@components/postCard/postCard.twig" %}
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

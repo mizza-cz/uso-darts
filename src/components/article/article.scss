@@ -1,0 +1,55 @@
+.article {
+  margin-bottom: 40px;
+  &__img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 952/636;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+    .tag {
+      position: absolute;
+      left: 40px;
+      bottom: 24px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.article-gallery {
+  &__item {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 189/126;
+    &:hover img {
+      transform: scale(1.05);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.25s ease;
+    }
+  }
+  &__num {
+    position: absolute;
+    background: var(--color-secondary-80);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    color: var(--color-white);
+  }
+}

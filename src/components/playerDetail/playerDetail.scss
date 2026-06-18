@@ -1,0 +1,50 @@
+.playerDetail {
+  background-color: var(--color-gray);
+  display: flex;
+  gap: 2px;
+  padding: 10px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(sm) {
+    flex-direction: column;
+  }
+  &__img {
+    background-color: var(--color-white);
+    min-width: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include media-breakpoint-down(sm) {
+      padding: 24px;
+    }
+    img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 100%;
+      background-color: var(--color-gray);
+      box-shadow: 0px 3px 3px -1.5px #0a0d120a, 0px 8px 8px -4px #0a0d1208,
+        0px 20px 24px -4px #0a0d1214;
+    }
+  }
+  &__info {
+    background-color: var(--color-white);
+    width: 100%;
+    tr {
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--color-gray);
+        padding: 12px 20px;
+        gap: 8px;
+      }
+    }
+    td {
+      @include media-breakpoint-down(lg) {
+        width: auto !important;
+        border: none;
+        padding: 0;
+      }
+    }
+  }
+}

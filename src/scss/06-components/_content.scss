@@ -1,0 +1,33 @@
+.o-content {
+  &::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 1rem;
+  }
+  .table-responsive {
+    margin: 2rem 0;
+  }
+  h1,
+  h2 {
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+  }
+  h5,
+  h6,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: var(--color-primary);
+  }
+}

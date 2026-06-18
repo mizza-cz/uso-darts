@@ -1,0 +1,21 @@
+.partnersSlider {
+  padding-right: 2px !important;
+  &__link {
+    width: 100%;
+    transition: all 0.25s ease;
+    aspect-ratio: 220/120;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-gray-5);
+    img {
+      object-fit: contain;
+      width: 70%;
+      height: 70%;
+      @include media-breakpoint-down(sm) {
+        width: 80%;
+        height: 80%;
+      }
+    }
+  }
+}

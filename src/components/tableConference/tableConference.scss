@@ -1,0 +1,10 @@
+.tableConference {
+  th {
+    color: var(--color-tertiary);
+  }
+  th,
+  td {
+    text-align: center;
+    padding: 4px 8px;
+  }
+}

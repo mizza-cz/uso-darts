@@ -1,0 +1,14 @@
+.rankingBoard {
+  margin-bottom: 40px;
+}
+
+.rankingBoard__item {
+  border: 1px solid var(--color-white);
+  padding: 24px 16px 12px;
+  @include media-breakpoint-up(xxl) {
+    padding: 40px 40px 28px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding: 32px 32px 20px;
+  }
+}
