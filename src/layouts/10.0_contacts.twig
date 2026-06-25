@@ -1,0 +1,31 @@
+{% extends "@components/base/base.twig" %} {% set title = "10.0_contacts" %} {%
+block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary px-xxl-10 px-lg-6">Kontakty</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-6">
+        <div class="col-lg-8">
+          <div class="px-xxl-10 px-lg-6">
+            {% include "@components/contacts/contacts.twig" %}
+          </div>
+          <a class="d-block w-100 mt-lg-10 mt-8" href="#">
+            <img
+              class="w-100 object-fit-cover"
+              src="images/content/pub.webp"
+              alt="pub"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="col-lg-4">{% include "@components/aside/aside.twig" %}</div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+.consent-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.consent-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.consent-checkbox__box {
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--color-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.consent-checkbox__box svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--color-tertiary);
+  stroke-width: 3.2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.consent-checkbox input:checked + .consent-checkbox__box svg {
+  opacity: 1;
+}

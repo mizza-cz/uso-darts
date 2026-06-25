@@ -1,0 +1,25 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  &__menu {
+    background: var(--color-white);
+  }
+  &__link {
+    display: block;
+    padding: 8px 32px;
+    color: var(--color-primary);
+    text-decoration-color: transparent;
+    border-bottom: 1px solid var(--color-gray);
+    @include media-breakpoint-down(md) {
+      padding: 8px 24px;
+    }
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
+  &__link.active {
+    background-color: var(--color-gray);
+    font-weight: 700;
+  }
+}
