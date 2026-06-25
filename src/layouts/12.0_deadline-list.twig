@@ -1,0 +1,100 @@
+{% extends "@components/base/base.twig" %} {% set title = "12.0_deadline-list"
+%} {% block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary px-xxl-10 px-lg-6">Termínová listina</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Termín</th>
+              <th>Termín</th>
+              <th>Název akce / kontakt</th>
+              <th>Hrací místo</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..20 %}
+            <tr>
+              <td>UŠO</td>
+              <td>so 30. 5. 2026 – pá 5. 6. 2026</td>
+              <td>
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDeadline"
+                  class="text-secondary fw-bold"
+                  href="#"
+                >
+                  Národní finále Ligového poháru (kat. C+)
+                </a>
+                <div class="text-base-sm text-tertiary">
+                  (777065519, sekretariat@sipky.org)
+                </div>
+              </td>
+              <td>
+                <a data-bs-toggle="modal" data-bs-target="#modalPlace" href="#"
+                  >DK Žďár nad Sázavou, Dolní 183/30</a
+                >
+              </td>
+
+              <td>
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalDeadline"
+                  class="d-flex align-items-center gap-2"
+                  href="#"
+                >
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail akce
+                </a>
+              </td>
+            </tr>
+
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <nav class="navPagination mt-8 mb-10" aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-left.svg" %}
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link" type="button">
+              {% include "@images/arrow-right.svg" %}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+
+{% include "@components/modal/modalPlace.twig" %} {% include
+"@components/modal/modalDeadline.twig" %} {% endblock %}

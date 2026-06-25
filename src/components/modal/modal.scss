@@ -1,0 +1,69 @@
+.modal.show {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 96.5%, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  overflow: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.modal-header {
+  background: var(--color-gray);
+  padding: 28px 40px !important;
+  @include media-breakpoint-down(md) {
+    padding: 24px !important;
+  }
+  .btn-close {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    @include media-breakpoint-down(md) {
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+.modal-dialog {
+  max-width: 920px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  width: 100%;
+}
+.modal-body {
+  background: var(--color-white);
+  padding: 0;
+}
+
+.tableModal {
+  padding: 0 24px;
+  td {
+    white-space: wrap;
+  }
+  table {
+    min-width: auto;
+  }
+  @include media-breakpoint-down(md) {
+    tr {
+      display: flex;
+      flex-direction: column;
+      border-bottom: 0.125rem solid var(--color-gray);
+      padding: 12px 0;
+      gap: 6px;
+    }
+    td {
+      padding: 0;
+      border-bottom: none;
+    }
+  }
+}
