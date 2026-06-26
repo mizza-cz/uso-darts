@@ -1,15 +1,32 @@
 .playerDetail {
   background-color: var(--color-gray);
-  display: flex;
-  gap: 2px;
   padding: 10px;
   margin-bottom: 40px;
-  @include media-breakpoint-down(sm) {
-    flex-direction: column;
+  &__title {
+    padding: 24px 32px;
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+    @include media-breakpoint-down(sm) {
+      gap: 8px;
+    }
+  }
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(200px, 232px) 1fr;
+    gap: 2px;
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      display: flex;
+    }
   }
   &__img {
     background-color: var(--color-white);
-    min-width: 240px;
+
+    padding: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,6 +36,7 @@
     img {
       width: 160px;
       height: 160px;
+      min-width: 160px;
       object-fit: cover;
       object-position: top;
       border-radius: 100%;

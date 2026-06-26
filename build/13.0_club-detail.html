@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>05.0_player-detail - Unie šipkových organizací</title>
+	<title>13.0_club-detail - Unie šipkových organizací</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 
@@ -199,164 +199,337 @@
 			<section class="mb-10">
 				<div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
 					<div class="container">
-						<h1 class="h2 text-secondary">Detail hráče: Jan Šipkařský</h1>
-					</div>
-				</div>
-				<div class="container">
-					<div class="playerDetail">
-						<div class="playerDetail__inner">
-							<div class="playerDetail__img">
-								<img src="images/content/player.png" alt="avatar" />
-							</div>
-							<div class="playerDetail__info">
-								<table class="table">
-									<tbody>
-										<tr>
-											<td style="width: 180px" class="fw-bold ps-lg-10">
-												Registrační číslo:
-											</td>
-											<td>CZE000022</td>
-										</tr>
-										<tr>
-											<td style="width: 180px" class="fw-bold ps-lg-10">Obec:</td>
-											<td>Říčany</td>
-										</tr>
-										<tr>
-											<td style="width: 180px" class="fw-bold ps-lg-10">Kategorie:</td>
-											<td>A</td>
-										</tr>
-										<tr>
-											<td style="width: 180px" class="fw-bold ps-lg-10">Klub:</td>
-											<td>
-												<a href="#" class="text-secondary">Sgt. Pepik's Band Praha</a>
-											</td>
-										</tr>
-									</tbody>
-								</table>
+						<div class="d-flex align-items-center gap-6 justify-content-between flex-wrap">
+							<h1 class="h2 text-secondary">Detail hráče: Jan Šipkařský</h1>
+							<div class="d-flex align-items-center gap-lg-4 gap-2 flex-wrap">
+								<div class="fw-bold">Hrací místo:</div>
+								<a class="text-secondary" data-bs-toggle="modal" data-bs-target="#modalPlace" href="#">
+									DK Žďár nad Sázavou, Dolní 183/30
+								</a>
 							</div>
 						</div>
 					</div>
-					<a class="d-block w-100 mb-10" href="#">
-						<img class="w-100 object-fit-cover" src="images/content/pub.webp" alt="pub" loading="lazy" />
-					</a>
-					<h2 class="h4 text-primary mb-6">Umístění v žebříčcích</h2>
-					<div class="table-responsive">
+				</div>
+				<div class="container">
+					<div class="row g-6">
+						<div class="col-xl-6">
+							<div class="playerDetail">
+								<h2 class="playerDetail__title h4">
+									<div class="text-tertiary">Předseda klubu:</div>
+									Jan Šipkařský
+								</h2>
+								<div class="playerDetail__inner">
+									<div class="playerDetail__img">
+										<img src="images/content/player.png" alt="avatar" />
+									</div>
+									<div class="playerDetail__info">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Registrační číslo:</td>
+													<td>CZE000022</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Obec:</td>
+													<td>Říčany</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Kategorie:</td>
+													<td>A</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Klub:</td>
+													<td>
+														<a href="#" class="text-secondary">Sgt. Pepik's Band Praha</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6">
+							<div class="playerDetail">
+								<h2 class="playerDetail__title h4">
+									<div class="text-tertiary">Vedoucí družstva:</div>
+									Jan Šipkařský
+								</h2>
+								<div class="playerDetail__inner">
+									<div class="playerDetail__img">
+										<img src="images/content/player.png" alt="avatar" />
+									</div>
+									<div class="playerDetail__info">
+										<table class="table">
+											<tbody>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Registrační číslo:</td>
+													<td>CZE000022</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Obec:</td>
+													<td>Říčany</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Kategorie:</td>
+													<td>A</td>
+												</tr>
+												<tr>
+													<td class="fw-bold ps-xxl-10">Klub:</td>
+													<td>
+														<a href="#" class="text-secondary">Sgt. Pepik's Band Praha</a>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<h3 class="h4 text-primary mb-6">Soupiska klubu</h3>
+					<div class="table-responsive mb-10">
 						<table class="table">
 							<thead>
 								<tr>
-									<th>Název žebříčku</th>
-									<th style="width: 240px" class="text-center">
-										Pořadí (celkem hráčů)
-									</th>
-									<th style="width: 80px" class="text-center">A</th>
-									<th style="width: 80px" class="text-center">B</th>
-									<th style="width: 80px" class="text-center">C</th>
-									<th style="width: 80px" class="text-center">D</th>
-									<th style="width: 104px" class="text-center">Turnajů</th>
-									<th style="width: 104px" class="text-center">Body</th>
-									<th style="width: 180px">Detail</th>
+									<th>Hráč</th>
+									<th style="width: 164px">Registrační číslo</th>
+									<th>Obec</th>
+									<th style="width: 160px">GDPR souhlas</th>
+									<th>Poznámka</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
 									<td>
-										<a class="fw-bold text-secondary" href="#">
-											Windson Cup - ČP mužů 2026
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/no-player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
-									<td class="text-center">(9580 hráčů)</td>
-									<td class="text-center">2</td>
-									<td class="text-center">58</td>
-									<td class="text-center">10</td>
-									<td class="text-center">0</td>
-									<td class="text-center">70</td>
-									<td class="text-center">8 480</td>
-									<td>
-										<a class="d-flex align-items-center gap-2" href="#">
-											<img class="object-fit-contain" width="16" height="16" src="images/ico/arrow-circle-right.svg" alt="link" />
-											Detail žebříčku
-										</a>
-									</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
 								</tr>
 								<tr>
 									<td>
-										<a class="fw-bold text-secondary" href="#">
-											Windson Cup - ČP mužů 2026
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
-									<td class="text-center">(9580 hráčů)</td>
-									<td class="text-center">2</td>
-									<td class="text-center">58</td>
-									<td class="text-center">10</td>
-									<td class="text-center">0</td>
-									<td class="text-center">70</td>
-									<td class="text-center">8 480</td>
-									<td>
-										<a class="d-flex align-items-center gap-2" href="#">
-											<img class="object-fit-contain" width="16" height="16" src="images/ico/arrow-circle-right.svg" alt="link" />
-											Detail žebříčku
-										</a>
-									</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
 								</tr>
 								<tr>
 									<td>
-										<a class="fw-bold text-secondary" href="#">
-											Windson Cup - ČP mužů 2026
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
-									<td class="text-center">(9580 hráčů)</td>
-									<td class="text-center">2</td>
-									<td class="text-center">58</td>
-									<td class="text-center">10</td>
-									<td class="text-center">0</td>
-									<td class="text-center">70</td>
-									<td class="text-center">8 480</td>
-									<td>
-										<a class="d-flex align-items-center gap-2" href="#">
-											<img class="object-fit-contain" width="16" height="16" src="images/ico/arrow-circle-right.svg" alt="link" />
-											Detail žebříčku
-										</a>
-									</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
 								</tr>
 								<tr>
 									<td>
-										<a class="fw-bold text-secondary" href="#">
-											Windson Cup - ČP mužů 2026
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
-									<td class="text-center">(9580 hráčů)</td>
-									<td class="text-center">2</td>
-									<td class="text-center">58</td>
-									<td class="text-center">10</td>
-									<td class="text-center">0</td>
-									<td class="text-center">70</td>
-									<td class="text-center">8 480</td>
-									<td>
-										<a class="d-flex align-items-center gap-2" href="#">
-											<img class="object-fit-contain" width="16" height="16" src="images/ico/arrow-circle-right.svg" alt="link" />
-											Detail žebříčku
-										</a>
-									</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
 								</tr>
 								<tr>
 									<td>
-										<a class="fw-bold text-secondary" href="#">
-											Windson Cup - ČP mužů 2026
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
-									<td class="text-center">(9580 hráčů)</td>
-									<td class="text-center">2</td>
-									<td class="text-center">58</td>
-									<td class="text-center">10</td>
-									<td class="text-center">0</td>
-									<td class="text-center">70</td>
-									<td class="text-center">8 480</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
+								</tr>
+								<tr>
 									<td>
-										<a class="d-flex align-items-center gap-2" href="#">
-											<img class="object-fit-contain" width="16" height="16" src="images/ico/arrow-circle-right.svg" alt="link" />
-											Detail žebříčku
-										</a>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
 									</td>
+									<td>CZE000022</td>
+									<td>Hořice na Šumavě</td>
+									<td>Udělen</td>
+									<td>–</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<a class="d-block w-100 mb-10" href="#">
+						<img class="w-100 object-fit-cover" src="images/content/pub.webp" alt="pub" loading="lazy" />
+					</a>
+					<div class="table-responsive mb-10">
+						<table class="table">
+							<thead>
+								<tr>
+									<th style="width: 80px" rowspan="2">Pořadí</th>
+									<th rowspan="2" class="text-start">Hráč</th>
+									<th style="width: 80px" class="text-center" rowspan="2">LKH</th>
+									<th style="width: 320px" colspan="4" class="text-center">
+										Zápasy
+									</th>
+									<th style="width: 240px" colspan="3" class="text-center">Legy</th>
+								</tr>
+								<tr>
+									<th style="width: 80px" class="text-center">%</th>
+									<th style="width: 80px" class="text-center">C</th>
+									<th style="width: 80px" class="text-center">O</th>
+									<th style="width: 80px" class="text-center">V</th>
+									<th style="width: 80px" class="text-center">%</th>
+									<th style="width: 80px" class="text-center">O</th>
+									<th style="width: 80px" class="text-center">V</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1.</td>
+									<td>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
+									</td>
+									<td class="text-center">58,5</td>
+									<td class="text-center">63,38</td>
+									<td class="text-center">80</td>
+									<td class="text-center">71</td>
+									<td class="text-center">45</td>
+									<td class="text-center">60,59</td>
+									<td class="text-center">170</td>
+									<td class="text-center">103</td>
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
+									</td>
+									<td class="text-center">58,5</td>
+									<td class="text-center">63,38</td>
+									<td class="text-center">80</td>
+									<td class="text-center">71</td>
+									<td class="text-center">45</td>
+									<td class="text-center">60,59</td>
+									<td class="text-center">170</td>
+									<td class="text-center">103</td>
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
+									</td>
+									<td class="text-center">58,5</td>
+									<td class="text-center">63,38</td>
+									<td class="text-center">80</td>
+									<td class="text-center">71</td>
+									<td class="text-center">45</td>
+									<td class="text-center">60,59</td>
+									<td class="text-center">170</td>
+									<td class="text-center">103</td>
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
+									</td>
+									<td class="text-center">58,5</td>
+									<td class="text-center">63,38</td>
+									<td class="text-center">80</td>
+									<td class="text-center">71</td>
+									<td class="text-center">45</td>
+									<td class="text-center">60,59</td>
+									<td class="text-center">170</td>
+									<td class="text-center">103</td>
+								</tr>
+								<tr>
+									<td>1.</td>
+									<td>
+										<div class="d-flex align-items-center gap-3">
+											<div class="ps-md-3 pe-lg-7 pe-4">
+												<img class="rounded-circle object-fit-cover object-position-top bg-gray" width="80px" height="80px" src="images/content/player.png" alt="avatar" />
+											</div>
+											<a class="fw-bold text-secondary" href="#">
+												Hoffmann Martin
+											</a>
+										</div>
+									</td>
+									<td class="text-center">58,5</td>
+									<td class="text-center">63,38</td>
+									<td class="text-center">80</td>
+									<td class="text-center">71</td>
+									<td class="text-center">45</td>
+									<td class="text-center">60,59</td>
+									<td class="text-center">170</td>
+									<td class="text-center">103</td>
 								</tr>
 							</tbody>
 						</table>
@@ -364,7 +537,55 @@
 				</div>
 			</section>
 		</main>
-
+		<div class="modal fade" id="modalPlace" tabindex="-1" aria-labelledby="modalPlaceLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="h4 text-secondary" id="modalPlaceLabel">
+							Bar U Madejů Hořice na Šumavě
+						</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+							<img width="40px" height="40px" class="object-fit-contain" src="images/ico/modal-close.svg" alt="close" loading="lazy" />
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="tableModal">
+							<table class="table">
+								<tbody>
+									<tr>
+										<td class="fw-bold text-primary">Adresa:</td>
+										<td class="text-primary">
+											Hořice na Šumavě 136, 382 22 Hořice na Šumavě
+										</td>
+										<td>
+											<a class="d-flex align-items-center gap-2" href="#">
+												<img class="object-fit-contain" width="16" height="16" src="images/ico/pin.svg" alt="link" />
+												Zobrazit na mapě
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td class="fw-bold">Web:</td>
+										<td>
+											<a href="www.umadeju.cz" class="text-secondary">www.umadeju.cz</a>
+										</td>
+										<td></td>
+									</tr>
+									<tr>
+										<td class="fw-bold">Kontakty:</td>
+										<td>
+											<a class="text-secondary" href="tel:+420777888999">+420 777 888 999</a>,
+											<a class="text-secondary" href="mailto:sekretariat@sipky.org">sekretariat@sipky.org</a>
+										</td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<section class="bg-gray py-10">
 			<div class="container">
 				<div class="swiper partnersSlider">

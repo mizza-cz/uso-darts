@@ -1,0 +1,235 @@
+{% extends "@components/base/base.twig" %} {% set title = "13.0_club-detail" %}
+{% block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <div
+          class="d-flex align-items-center gap-6 justify-content-between flex-wrap"
+        >
+          <h1 class="h2 text-secondary">Detail hráče: Jan Šipkařský</h1>
+          <div class="d-flex align-items-center gap-lg-4 gap-2 flex-wrap">
+            <div class="fw-bold">Hrací místo:</div>
+            <a
+              class="text-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalPlace"
+              href="#"
+            >
+              DK Žďár nad Sázavou, Dolní 183/30
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row g-6">
+        <div class="col-xl-6">
+          <div class="playerDetail">
+            <h2 class="playerDetail__title h4">
+              <div class="text-tertiary">Předseda klubu:</div>
+              Jan Šipkařský
+            </h2>
+            <div class="playerDetail__inner">
+              <div class="playerDetail__img">
+                <img src="images/content/player.png" alt="avatar" />
+              </div>
+              <div class="playerDetail__info">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Registrační číslo:</td>
+                      <td>CZE000022</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Obec:</td>
+                      <td>Říčany</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Kategorie:</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Klub:</td>
+                      <td>
+                        <a href="#" class="text-secondary"
+                          >Sgt. Pepik's Band Praha</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6">
+          <div class="playerDetail">
+            <h2 class="playerDetail__title h4">
+              <div class="text-tertiary">Vedoucí družstva:</div>
+              Jan Šipkařský
+            </h2>
+            <div class="playerDetail__inner">
+              <div class="playerDetail__img">
+                <img src="images/content/player.png" alt="avatar" />
+              </div>
+              <div class="playerDetail__info">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Registrační číslo:</td>
+                      <td>CZE000022</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Obec:</td>
+                      <td>Říčany</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Kategorie:</td>
+                      <td>A</td>
+                    </tr>
+                    <tr>
+                      <td class="fw-bold ps-xxl-10">Klub:</td>
+                      <td>
+                        <a href="#" class="text-secondary"
+                          >Sgt. Pepik's Band Praha</a
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="h4 text-primary mb-6">Soupiska klubu</h3>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Hráč</th>
+              <th style="width: 164px">Registrační číslo</th>
+              <th>Obec</th>
+              <th style="width: 160px">GDPR souhlas</th>
+              <th>Poznámka</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="ps-md-3 pe-lg-7 pe-4">
+                    <img
+                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      width="80px"
+                      height="80px"
+                      src="images/content/no-player.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td>CZE000022</td>
+              <td>Hořice na Šumavě</td>
+              <td>Udělen</td>
+              <td>–</td>
+            </tr>
+            {% for i in 1..5 %}
+            <tr>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="ps-md-3 pe-lg-7 pe-4">
+                    <img
+                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      width="80px"
+                      height="80px"
+                      src="images/content/player.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td>CZE000022</td>
+              <td>Hořice na Šumavě</td>
+              <td>Udělen</td>
+              <td>–</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <a class="d-block w-100 mb-10" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 80px" rowspan="2">Pořadí</th>
+              <th rowspan="2" class="text-start">Hráč</th>
+              <th style="width: 80px" class="text-center" rowspan="2">LKH</th>
+              <th style="width: 320px" colspan="4" class="text-center">
+                Zápasy
+              </th>
+              <th style="width: 240px" colspan="3" class="text-center">Legy</th>
+            </tr>
+            <tr>
+              <th style="width: 80px" class="text-center">%</th>
+              <th style="width: 80px" class="text-center">C</th>
+              <th style="width: 80px" class="text-center">O</th>
+              <th style="width: 80px" class="text-center">V</th>
+              <th style="width: 80px" class="text-center">%</th>
+              <th style="width: 80px" class="text-center">O</th>
+              <th style="width: 80px" class="text-center">V</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td>1.</td>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="ps-md-3 pe-lg-7 pe-4">
+                    <img
+                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      width="80px"
+                      height="80px"
+                      src="images/content/player.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td class="text-center">58,5</td>
+              <td class="text-center">63,38</td>
+              <td class="text-center">80</td>
+              <td class="text-center">71</td>
+              <td class="text-center">45</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">103</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+{% include "@components/modal/modalPlace.twig" %} {% endblock %}

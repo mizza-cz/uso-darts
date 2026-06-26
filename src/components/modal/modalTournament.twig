@@ -1,0 +1,104 @@
+<div
+  class="modal fade"
+  id="modalTournament"
+  tabindex="-1"
+  aria-labelledby="modalTournamentLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="h4 text-secondary" id="modalTournamentLabel">
+          Národní finále Ligového poháru (kat. C+)
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          <img
+            width="40px"
+            height="40px"
+            class="object-fit-contain"
+            src="images/ico/modal-close.svg"
+            alt="close"
+            loading="lazy"
+          />
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tableModal">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td class="fw-bold">Termín:</td>
+                <td>so 30. 5. 2026, 14:00 – 20:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Rozhodčí:</td>
+                <td>Uhříček Břetislav</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Hrací místo:</td>
+                <td>DK Žďár nad Sázavou, Dolní 183/30</td>
+                <td>
+                  <a class="d-flex align-items-center gap-2" href="#">
+                    <img
+                      class="object-fit-contain"
+                      width="16"
+                      height="16"
+                      src="images/ico/pin.svg"
+                      alt="link"
+                    />
+                    Zobrazit na mapě
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Hráčů:</td>
+                <td>11</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="fw-bold">Žebříčků:</td>
+                <td>0</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="bg-gray py-6">
+          <h5 class="h5 mb-4 text-primary px-md-10">Seznam hráčů</h5>
+          <div class="table-responsive">
+            <table class="table tableTournamentPlayers">
+              <thead>
+                <tr>
+                  <th class="ps-lg-10 ps-6">Pořadí</th>
+                  <th>Jméno a příjmení</th>
+                  <th>Registrační číslo</th>
+                  <th class="text-center" style="width: 64px">Kat</th>
+                  <th>Klub</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in 1..5 %}
+                <tr>
+                  <td class="ps-lg-10 ps-6">1.</td>
+                  <td>Kalášek Jiří</td>
+                  <td>CZE045745</td>
+                  <td>A</td>
+                  <td>Dream Bar Jirkov</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
