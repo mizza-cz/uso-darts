@@ -1,0 +1,132 @@
+{% extends "@components/base/base.twig" %} {% set title = "15.0_league-groups"
+%} {% block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary">Ligové skupiny</h1>
+      </div>
+    </div>
+    <div class="container">
+      <form class="filterForm mb-10">
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterYear">
+            <option>2025/2026</option>
+            <option>2024/2025</option>
+            <option>2023/2024</option>
+            <option>2022/2023</option>
+          </select>
+        </div>
+      </form>
+      <h2 class="h4 text-primary mb-6">Superliga</h2>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ligová skupina</th>
+              <th style="width: 160px" class="text-center">Zahájení</th>
+              <th style="width: 160px" class="text-center">Ukončení</th>
+              <th style="width: 160px" class="text-center">Družstev</th>
+              <th style="width: 80px" class="text-center">Kol</th>
+              <th style="width: 180px">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..2 %}
+            <tr>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Severozápadní konference
+                </a>
+              </td>
+              <td class="text-center">21. 9. 2026</td>
+              <td class="text-center">7. 6. 2027</td>
+              <td class="text-center text-secondary">
+                <a data-bs-toggle="modal" data-bs-target="#modalLeague" href="#"
+                  >14</a
+                >
+              </td>
+              <td class="text-center">
+                <a data-bs-toggle="modal" data-bs-target="#modalLeague" href="#"
+                  >14</a
+                >
+              </td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail soutěže
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <h2 class="h4 text-primary mb-6">Hlavní ligová soutěž UŠO</h2>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Ligová skupina</th>
+              <th style="width: 160px" class="text-center">Zahájení</th>
+              <th style="width: 160px" class="text-center">Ukončení</th>
+              <th style="width: 160px" class="text-center">Družstev</th>
+              <th style="width: 80px" class="text-center">Kol</th>
+              <th style="width: 180px">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  1 .Jihočeská liga A
+                </a>
+              </td>
+              <td class="text-center">21. 9. 2026</td>
+              <td class="text-center">7. 6. 2027</td>
+              <td class="text-center text-secondary">
+                <a data-bs-toggle="modal" data-bs-target="#modalLeague" href="#"
+                  >14</a
+                >
+              </td>
+              <td class="text-center">
+                <a data-bs-toggle="modal" data-bs-target="#modalLeague" href="#"
+                  >14</a
+                >
+              </td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail soutěže
+                </a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+{% include "@components/modal/modalLeague.twig" %} {% endblock %}
