@@ -1,0 +1,472 @@
+{% extends "@components/base/base.twig" %} {% set title =
+"16.0_league-groups-detail" %} {% block main %} {% include
+"@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    <div class="bg-gray py-lg-10 py-8 mb-lg-10 mb-8">
+      <div class="container">
+        <h1 class="h2 text-secondary">
+          Hlavní ligová soutěž UŠO: 2. Jihočeská liga A
+        </h1>
+      </div>
+    </div>
+    <div class="container">
+      <form
+        class="filterForm d-flex flex-sm-row flex-column align-items-center gap-4 flex-wrap mb-10"
+      >
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterYear">
+            <option>2025/2026</option>
+            <option>2024/2025</option>
+            <option>2023/2024</option>
+            <option>2022/2023</option>
+          </select>
+        </div>
+        <div class="filterForm-select w-sm-auto w-100">
+          <select class="js-select" id="filterLeague">
+            <option>1. Jihočeská liga A</option>
+            <option>liga 2</option>
+            <option>kategorie řády</option>
+            <option>Soutěžní kategorie</option>
+          </select>
+        </div>
+      </form>
+      <h2 class="h4 text-primary mb-6">Superliga</h2>
+      <div class="table-responsive mb-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 80px">Pořadí</th>
+              <th>Družstvo</th>
+              <th style="width: 80px" class="text-center">Kol</th>
+              <th style="width: 80px" class="text-center">V</th>
+              <th style="width: 80px" class="text-center">VP</th>
+              <th style="width: 80px" class="text-center">R</th>
+              <th style="width: 80px" class="text-center">PP</th>
+              <th style="width: 80px" class="text-center">P</th>
+              <th style="width: 80px" class="text-center">K</th>
+              <th style="width: 120px">Skóre</th>
+              <th style="width: 120px" class="text-center">Legy</th>
+              <th style="width: 104px" class="text-center">Body</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Royal Darts Team Ivančice
+                </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>2.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#"> Bastr team Brno </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>3.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Royal Darts Team Ivančice
+                </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>4.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#"> Bastr team Brno </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>5.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  DC Rychlé šipky Bosonohy
+                </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>6.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#"> Bastr team Brno </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>7.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Royal Darts Team Ivančice
+                </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+            <tr>
+              <td>8.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#"> Bastr team Brno </a>
+              </td>
+              <td class="text-center">24</td>
+              <td class="text-center">22</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">0</td>
+              <td class="text-center">2</td>
+              <td class="text-center">0</td>
+              <td class="text-center">290:142</td>
+              <td class="text-center">648:390</td>
+              <td class="text-center">66</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-base-sm text-tertiary mb-10">
+        <img
+          src="images/ico/info-circle.svg"
+          width="21px"
+          height="21px"
+          class="object-fit-contain d-inline me-3 align-middle"
+          alt="info"
+        />
+        V průběhu soutěže je tabulka řazena dle skóre. Vzájemné zápasy se
+        zohlední až v průběhu posledního kola soutěže
+      </p>
+      <h2 class="h4 text-primary mb-6">Statistika hráčů</h2>
+      <div class="table-responsive mb-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 80px" rowspan="2">Pořadí</th>
+              <th rowspan="2" class="text-start">Hráč</th>
+              <th rowspan="2">Družstvo</th>
+              <th style="width: 80px" class="text-center" rowspan="2">LKH</th>
+              <th style="width: 320px" colspan="4" class="text-center">
+                Zápasy
+              </th>
+              <th style="width: 240px" colspan="3" class="text-center">Legy</th>
+            </tr>
+            <tr>
+              <th style="width: 80px" class="text-center">%</th>
+              <th style="width: 80px" class="text-center">C</th>
+              <th style="width: 80px" class="text-center">O</th>
+              <th style="width: 80px" class="text-center">V</th>
+              <th style="width: 80px" class="text-center">%</th>
+              <th style="width: 80px" class="text-center">O</th>
+              <th style="width: 80px" class="text-center">V</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..5 %}
+            <tr>
+              <td>1.</td>
+              <td>
+                <div class="d-flex align-items-center gap-3">
+                  <div class="ps-md-3 pe-lg-7 pe-4">
+                    <img
+                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      width="80px"
+                      height="80px"
+                      src="images/content/player.png"
+                      alt="avatar"
+                    />
+                  </div>
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td><a href="#">Royal Darts Team Ivančice</a></td>
+              <td class="text-center">58,5</td>
+              <td class="text-center">63,38</td>
+              <td class="text-center">80</td>
+              <td class="text-center">71</td>
+              <td class="text-center">45</td>
+              <td class="text-center">60,59</td>
+              <td class="text-center">170</td>
+              <td class="text-center">103</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <a href="#" class="button-secondary ms-auto mb-10">
+        Kompletní statistika {% include "@images/chevron-right.svg" %}
+      </a>
+      <a class="d-block w-100 mb-10" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+      <h3 class="h4 text-primary mb-6">Nejnovější výsledky</h3>
+      <div class="table-responsive mb-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 220px">Datum a čas</th>
+              <th style="width: 80px">Kolo</th>
+              <th>Domácí družstvo</th>
+              <th>Hostující družstvo</th>
+              <th class="text-center" style="width: 120px">Legy</th>
+              <th class="text-center" style="width: 120px">Skóre</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>čt 23. 4. 2026, 18:00</td>
+              <td>24</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Jarolímek Lukáš</p>
+              </td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Šipkaři Budišov B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Mrňa Aleš</p>
+              </td>
+              <td class="text-center">30:13</td>
+              <td class="fw-bold text-center">
+                <div class="bg-success-20 px-4 py-2 w-fit mx-auto">14:4</div>
+              </td>
+            </tr>
+            <tr>
+              <td>čt 23. 4. 2026, 18:00</td>
+              <td>24</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Jarolímek Lukáš</p>
+              </td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Šipkaři Budišov B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Mrňa Aleš</p>
+              </td>
+              <td class="text-center">30:13</td>
+              <td class="fw-bold text-center">
+                <div class="bg-error-20 px-4 py-2 w-fit mx-auto">14:4</div>
+              </td>
+            </tr>
+            <tr>
+              <td>čt 23. 4. 2026, 18:00</td>
+              <td>24</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Jarolímek Lukáš</p>
+              </td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Šipkaři Budišov B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Mrňa Aleš</p>
+              </td>
+              <td class="text-center">30:13</td>
+              <td class="fw-bold text-center">
+                <div class="bg-pink px-4 py-2 w-fit mx-auto">14:4</div>
+              </td>
+            </tr>
+            <tr>
+              <td>čt 23. 4. 2026, 18:00</td>
+              <td>24</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Jarolímek Lukáš</p>
+              </td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Šipkaři Budišov B Třebíč
+                </a>
+                <p class="text-tertiary">Kapitán: Mrňa Aleš</p>
+              </td>
+              <td class="text-center">30:13</td>
+              <td class="fw-bold text-center">
+                <div class="bg-error px-4 py-2 w-fit mx-auto">14:4</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="d-flex gap-lg-10 gap-6 flex-wrap align-items-center mb-6">
+        <div class="d-flex align-items-center gap-4">
+          <div class="bg-success-20" style="width: 24px; height: 24px"></div>
+          Autorizovaný výsledek
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <div class="bg-error-20" style="width: 24px; height: 24px"></div>
+          Neautorizovaný výsledek
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <div class="bg-pink" style="width: 24px; height: 24px"></div>
+          Technická kontumace
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <div class="bg-error" style="width: 24px; height: 24px"></div>
+          Kontumace
+        </div>
+      </div>
+      <a href="#" class="button-secondary ms-auto mb-10">
+        Všechny výsledky {% include "@images/chevron-right.svg" %}
+      </a>
+
+      <h3 class="h4 text-primary mb-6">Nejbližší zápasy</h3>
+      <div class="table-responsive mb-6">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 220px">Datum a čas</th>
+              <th style="width: 80px">Kolo</th>
+              <th>Domácí družstvo</th>
+              <th>Hostující družstvo</th>
+              <th>Hrací místo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div
+                  class="d-flex align-items-center gap-2"
+                  data-bs-toggle="tooltip"
+                  data-bs-html="true"
+                  data-bs-placement="bottom"
+                  title="<div class='fw-bold mb-2 text-start'>Změna termínu</div><p>Původně 23. 4. 2026, 18:00</p>"
+                >
+                  čt 23. 4. 2026, 18:00
+                  <img src="images/ico/info-square.svg" alt="tooltip" />
+                </div>
+              </td>
+              <td>24.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+              </td>
+              <td>
+                <a href="#" class="fw-bold text-secondary">
+                  Šipkaři Budišov B Třebíč
+                </a>
+              </td>
+              <td>
+                <a data-bs-toggle="modal" data-bs-target="#modalPlace" href="#"
+                  >DK Žďár nad Sázavou</a
+                >
+              </td>
+            </tr>
+            {% for i in 1..7 %}
+            <tr>
+              <td>čt 23. 4. 2026, 18:00</td>
+              <td>24.</td>
+              <td>
+                <a class="fw-bold text-secondary" href="#">
+                  Zálesáci B Třebíč
+                </a>
+              </td>
+              <td>
+                <a href="#" class="fw-bold text-secondary">
+                  Šipkaři Budišov B Třebíč
+                </a>
+              </td>
+              <td>
+                <a href="#">DK Žďár nad Sázavou</a>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <a href="#" class="button-secondary ms-auto mb-10">
+        Všechny zápasy {% include "@images/chevron-right.svg" %}
+      </a>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+{% include "@components/modal/modalPlace.twig" %} {% include
+"@components/modal/modalLeague.twig" %} {% endblock %}

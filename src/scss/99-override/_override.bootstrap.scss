@@ -22,6 +22,18 @@
 .bg-primary {
   background: var(--color-primary) !important;
 }
+.bg-success-20 {
+  background-color: var(--color-success-20);
+}
+.bg-error-20 {
+  background-color: var(--color-error-20) !important;
+}
+.bg-pink {
+  background-color: var(--color-pink) !important;
+}
+.bg-error {
+  background-color: var(--color-text-error) !important;
+}
 
 .text-white {
   color: var(--color-white) !important;
@@ -63,4 +75,8 @@ a.hover-outline {
 .object-position-top {
   object-position: top;
 }
+.w-fit {
+  width: fit-content;
+}
+
 /*! purgecss end ignore */
