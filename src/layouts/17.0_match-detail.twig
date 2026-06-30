@@ -1,0 +1,291 @@
+{% extends "@components/base/base.twig" %} {% set title = "17.0_match-detail" %}
+{% block main %} {% include "@components/header/header.twig" %}
+<main class="main" aria-label="Hlavní obsah">
+  <section class="mb-10">
+    {% include "@components/matchDetail/matchDetail.twig" %}
+    <div class="container">
+      <h2 class="h2 mb-lg-10 mb-6 text-secondary">Soupisky</h2>
+      <h3 class="h4 mb-6">Koněspřežka Bujanov A</h3>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 90px">Pozice</th>
+              <th>Hráč</th>
+              <th style="width: 120px">Střídání</th>
+              <th class="text-center" style="width: 120px">95+</th>
+              <th class="text-center" style="width: 120px">133+</th>
+              <th class="text-center" style="width: 120px">170+</th>
+              <th class="text-center" style="width: 120px">6. kolo</th>
+              <th class="text-center" style="width: 120px">5. kolo</th>
+              <th class="text-center" style="width: 120px">4. kolo</th>
+              <th class="text-center" style="width: 120px">3. kolo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..4 %}
+            <tr>
+              <td>D1</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <a  class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-center">9</td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+            </tr>
+            {% endfor %}
+            <tr>
+              <td colspan="10" class="h5 text-tertiary border-0">Náhradníci</td>
+            </tr>
+            {% for i in 1..2 %}
+            <tr>
+              <td>D4</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-center">9</td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <h3 class="h4 mb-6">Letka Hořice na Šumavě</h3>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 90px">Pozice</th>
+              <th>Hráč</th>
+              <th style="width: 120px">Střídání</th>
+              <th class="text-center" style="width: 120px">95+</th>
+              <th class="text-center" style="width: 120px">133+</th>
+              <th class="text-center" style="width: 120px">170+</th>
+              <th class="text-center" style="width: 120px">6. kolo</th>
+              <th class="text-center" style="width: 120px">5. kolo</th>
+              <th class="text-center" style="width: 120px">4. kolo</th>
+              <th class="text-center" style="width: 120px">3. kolo</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..4 %}
+            <tr>
+              <td>D1</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-center">9</td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+            </tr>
+            {% endfor %}
+            <tr>
+              <td colspan="10" class="h5 text-tertiary border-0">Náhradníci</td>
+            </tr>
+            <tr>
+              <td>D5</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <a class="fw-bold text-secondary" href="#">
+                    Hoffmann Martin
+                  </a>
+                </div>
+              </td>
+              <td class="text-center"></td>
+              <td class="text-center">9</td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+              <td class="text-center"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <a class="d-block w-100 mb-10" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+      <h4 class="h2 text-secondary mb-lg-10 mb-6">Zápasy</h4>
+      <div class="table-responsive mb-10">
+        <table class="table">
+          <thead>
+            <tr>
+              <th style="width: 80px">Pořadí</th>
+              <th style="width: 96px">Zápas</th>
+              <th>Domácí hráč</th>
+              <th>Hostující hráč</th>
+              <th class="text-center" style="width: 96px">Legy</th>
+              <th class="text-center" style="width: 96px">Skóre</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for i in 1..4 %}
+            <tr>
+              <td>1.</td>
+              <td>Single</td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="d-flex align-items-center gap-2">
+                    <span>D1</span>
+                    <a class="fw-bold text-secondary" href="#">
+                      Hoffmann Martin
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="d-flex align-items-center gap-4">
+                  <img
+                    class="object-fit-cover rounded-circle object-position-top"
+                    src="images/content/player.png"
+                    width="40"
+                    height="40"
+                    alt=""
+                  />
+                  <div class="d-flex align-items-center gap-2">
+                    <span>D1</span>
+                    <a class="fw-bold text-secondary" href="#">
+                      Hoffmann Martin
+                    </a>
+                  </div>
+                </div>
+              </td>
+              <td class="text-center">2:1</td>
+              <td class="text-center fw-bold">1:0</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="row g-10 mb-10 align-items-center">
+        <div class="col-lg-6">
+          <h4 class="h2 text-secondary mb-6">Zápis z utkání</h4>
+          <div class="d-grid gap-4">
+            <p>
+              <strong class="me-2">Zadal:</strong>Eliáš David (21. 2. 2026
+              20:18)
+            </p>
+            <p>
+              <strong class="me-2">Autorizoval:</strong>Hudák Radek (26. 2. 2026
+              21:39)
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <h4 class="h2 text-secondary mb-6">Vysvětlivky</h4>
+          <div class="row gx-10 gy-3">
+            <div class="col-auto">
+              <div class="d-grid gap-3">
+                <div class="d-flex align-items-center gap-4">
+                  <div
+                    class="bg-success-20"
+                    style="width: 24px; height: 24px"
+                  ></div>
+                  Autorizovaný výsledek
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div
+                    class="bg-error-20"
+                    style="width: 24px; height: 24px"
+                  ></div>
+                  Neautorizovaný výsledek
+                </div>
+              </div>
+            </div>
+            <div class="col-auto">
+              <div class="d-grid gap-3">
+                <div class="d-flex align-items-center gap-4">
+                  <div class="bg-pink" style="width: 24px; height: 24px"></div>
+                  Technická kontumace
+                </div>
+                <div class="d-flex align-items-center gap-4">
+                  <div class="bg-error" style="width: 24px; height: 24px"></div>
+                  Kontumace
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="d-block w-100" href="#">
+        <img
+          class="w-100 object-fit-cover"
+          src="images/content/pub.webp"
+          alt="pub"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </section>
+</main>
+{% include "@components/modal/modalPlace.twig" %} {% endblock %}
