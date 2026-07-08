@@ -44,6 +44,16 @@
     &::placeholder {
       color: var(--color-tertiary);
     }
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+      height: 44px;
+    }
+  }
+  .button-secondary {
+    @include media-breakpoint-down(sm) {
+      height: 44px;
+      font-size: 1rem;
+    }
   }
 }
 
