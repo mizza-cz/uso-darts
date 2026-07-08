@@ -258,9 +258,20 @@
 												</svg> </button>
 										</div>
 									</form>
-									<div class="alert alert-success mt-6" role="alert">
+									<div class="alert alert-success mt-6 d-none" role="alert">
 										Vaše zpráva byla úspěšně odeslána. Děkujeme.
 									</div>
+
+									<!--  script only for template, delete !!!! -->
+									<script>
+										document
+											.querySelector(".contactsForm")
+											.addEventListener("submit", function(e) {
+												e.preventDefault();
+												this.reset();
+												document.querySelector(".alert-success").classList.remove("d-none");
+											});
+									</script>
 								</div>
 							</div>
 							<a class="d-block w-100 mt-lg-10 mt-8" href="#">
