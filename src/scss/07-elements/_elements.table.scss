@@ -59,4 +59,22 @@ thead tr:last-child th {
   }
 }
 
- 
+.tableStatisticsPlayers {
+  th {
+    &:first-child {
+      border-left: none !important;
+    }
+    &:last-child {
+      border-right: none !important;
+    }
+  }
+  td {
+    border: 2px solid var(--color-gray) !important;
+    &:first-child {
+      border-left: none !important;
+    }
+    &:last-child {
+      border-right: none !important;
+    }
+  }
+}
