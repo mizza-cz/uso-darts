@@ -32,6 +32,7 @@
     .select2-selection--single
     .select2-selection__rendeprimary {
     color: var(--color-white);
+    
   }
   .select2-container {
     .select2-selection--single {
@@ -71,7 +72,6 @@
   }
 }
 .select2-dropdown {
-  min-width: max-content;
   top: 4px;
   border: 0;
   border-radius: 4px !important;
