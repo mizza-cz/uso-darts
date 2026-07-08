@@ -14,7 +14,7 @@
       <form
         class="filterForm d-flex flex-sm-row flex-column align-items-center gap-4 flex-wrap mb-10"
       >
-        <div class="filterForm-select w-sm-auto w-100">
+        <div class="filterForm-select" style="width: 144px">
           <select class="js-select" id="filterYear">
             <option>2025/2026</option>
             <option>2024/2025</option>
@@ -22,7 +22,7 @@
             <option>2022/2023</option>
           </select>
         </div>
-        <div class="filterForm-select w-sm-auto w-100">
+        <div class="filterForm-select" style="width: 190px">
           <select class="js-select" id="filterLeague">
             <option>1. Jihočeská liga A</option>
             <option>liga 2</option>
@@ -45,7 +45,7 @@
               <th style="width: 80px" class="text-center">PP</th>
               <th style="width: 80px" class="text-center">P</th>
               <th style="width: 80px" class="text-center">K</th>
-              <th style="width: 120px">Skóre</th>
+              <th style="width: 120px" class="text-center">Skóre</th>
               <th style="width: 120px" class="text-center">Legy</th>
               <th style="width: 104px" class="text-center">Body</th>
             </tr>
@@ -301,7 +301,11 @@
               </td>
               <td class="text-center">30:13</td>
               <td class="fw-bold text-center">
-                <div class="bg-success-20 px-4 py-2 w-fit mx-auto">14:4</div>
+                <a
+                  href="#"
+                  class="bg-success-20 px-4 py-2 w-fit mx-auto hover-outline"
+                  >14:4</a
+                >
               </td>
             </tr>
             <tr>
@@ -321,7 +325,11 @@
               </td>
               <td class="text-center">30:13</td>
               <td class="fw-bold text-center">
-                <div class="bg-error-20 px-4 py-2 w-fit mx-auto">14:4</div>
+                <a
+                  href="#"
+                  class="bg-error-20 px-4 py-2 w-fit mx-auto hover-outline"
+                  >14:4</a
+                >
               </td>
             </tr>
             <tr>
@@ -341,7 +349,11 @@
               </td>
               <td class="text-center">30:13</td>
               <td class="fw-bold text-center">
-                <div class="bg-pink px-4 py-2 w-fit mx-auto">14:4</div>
+                <a
+                  href="#"
+                  class="bg-pink px-4 py-2 w-fit mx-auto hover-outline"
+                  >14:4</a
+                >
               </td>
             </tr>
             <tr>
@@ -361,13 +373,19 @@
               </td>
               <td class="text-center">30:13</td>
               <td class="fw-bold text-center">
-                <div class="bg-error px-4 py-2 w-fit mx-auto">14:4</div>
+                <a
+                  href="#"
+                  class="bg-error px-4 py-2 w-fit mx-auto hover-outline"
+                  >14:4</a
+                >
               </td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="d-flex gap-lg-10 gap-6 flex-wrap align-items-center mb-6">
+      <div
+        class="d-flex gap-lg-10 gap-6 flex-wrap align-items-sm-center mb-6 flex-sm-row flex-column"
+      >
         <div class="d-flex align-items-center gap-4">
           <div class="bg-success-20" style="width: 24px; height: 24px"></div>
           Autorizovaný výsledek
@@ -399,6 +417,7 @@
               <th>Domácí družstvo</th>
               <th>Hostující družstvo</th>
               <th>Hrací místo</th>
+              <th>Detail</th>
             </tr>
           </thead>
           <tbody>
@@ -431,6 +450,18 @@
                   >DK Žďár nad Sázavou</a
                 >
               </td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail utkání
+                </a>
+              </td>
             </tr>
             {% for i in 1..7 %}
             <tr>
@@ -448,6 +479,18 @@
               </td>
               <td>
                 <a href="#">DK Žďár nad Sázavou</a>
+              </td>
+              <td>
+                <a class="d-flex align-items-center gap-2" href="#">
+                  <img
+                    class="object-fit-contain"
+                    width="16"
+                    height="16"
+                    src="images/ico/arrow-circle-right.svg"
+                    alt="link"
+                  />
+                  Detail utkání
+                </a>
               </td>
             </tr>
             {% endfor %}
