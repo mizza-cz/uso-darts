@@ -7,7 +7,9 @@
         <div
           class="d-flex align-items-center gap-6 justify-content-between flex-wrap"
         >
-          <h1 class="h2 text-secondary">Detail hráče: Jan Šipkařský</h1>
+          <h1 class="h2 text-secondary">
+            Detail klubu: Letka Hořice na Šumavě
+          </h1>
           <div class="d-flex align-items-center gap-lg-4 gap-2 flex-wrap">
             <div class="fw-bold">Hrací místo:</div>
             <a
@@ -23,6 +25,34 @@
       </div>
     </div>
     <div class="container">
+      <form
+        class="filterForm d-flex flex-sm-row flex-column align-items-center gap-4 flex-wrap mb-10"
+      >
+        <div class="filterForm-select" style="width: 144px">
+          <select class="js-select" id="filterYear">
+            <option>2025/2026</option>
+            <option>2024/2025</option>
+            <option>2023/2024</option>
+            <option>2022/2023</option>
+          </select>
+        </div>
+        <div class="filterForm-select" style="width: 190px">
+          <select class="js-select" id="filterPlace">
+            <option value="">3. Jihočeská liga A</option>
+            <option value="1">místa 1</option>
+            <option value="2">místa 2</option>
+            <option value="3">místa 3</option>
+          </select>
+        </div>
+        <div class="filterForm-select" style="width: 228px">
+          <select class="js-select" id="filterCategory">
+            <option value="">Letka Hořice na Šumavě</option>
+            <option value="1">kategorie 1</option>
+            <option value="2">kategorie řády</option>
+            <option value="3">Soutěžní kategorie</option>
+          </select>
+        </div>
+      </form>
       <div class="row g-6">
         <div class="col-xl-6">
           <div class="playerDetail">
