@@ -14,6 +14,12 @@
       width: 100%;
     }
   }
+  &-select {
+    @include media-breakpoint-down(sm) {
+      max-width: 100% !important;
+      width: 100% !important;
+    }
+  }
   &-search__icon {
     position: absolute;
     left: 20px;

@@ -32,7 +32,6 @@
     .select2-selection--single
     .select2-selection__rendeprimary {
     color: var(--color-white);
-    
   }
   .select2-container {
     .select2-selection--single {
@@ -121,7 +120,7 @@
 .select2-container--default .select2-selection--single {
   background: var(--color-white);
   border: 1px solid var(--color-gray-30);
-  width: fit-content;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
