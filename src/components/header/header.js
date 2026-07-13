@@ -24,7 +24,7 @@
       closeMenu();
     });
 
-    $(document).on("click", function (e) {
+    $(document).on("click.headerMenu", function (e) {
       if (
         $body.hasClass("is-nav-open") &&
         !$(e.target).closest(".headerNav__inner, .js-header__opener").length
@@ -40,44 +40,107 @@
     let t;
 
     function unbindAll() {
-      $menuItems.off("click");
-      $menuLists.off("mouseenter mouseleave");
+      $menuItems.off(".mainMenu");
+      $menuLists.off(".mainMenu");
     }
 
     function bindDesktop() {
       $menuLists
-        .on("mouseenter", function () {
+        .on("mouseenter.mainMenu", function () {
           $(this).addClass("active");
         })
-        .on("mouseleave", function () {
+        .on("mouseleave.mainMenu", function () {
           $(this).removeClass("active");
         });
     }
 
     function bindMobile() {
-      $menuItems.on("click", function (e) {
+      $menuItems.on("click.mainMenu", function (e) {
         const $cur = $(this).closest(".navbar__menu-list");
+
+        if ($cur.find(".dropdown-menu").length) {
+          e.preventDefault();
+        }
+
         $menuLists.not($cur).removeClass("active");
         $cur.toggleClass("active");
+
         e.stopPropagation();
       });
     }
 
     function refresh() {
       unbindAll();
-      $(window).width() >= DESKTOP_WIDTH ? bindDesktop() : bindMobile();
+
+      if ($(window).width() >= DESKTOP_WIDTH) {
+        bindDesktop();
+      } else {
+        bindMobile();
+      }
     }
 
     refresh();
 
-    $(window).on("resize", function () {
+    $(window).on("resize.mainMenu", function () {
       clearTimeout(t);
       t = setTimeout(refresh, 200);
+    });
+  }
+
+  function bindHeaderSearch() {
+    const $toggle = $(".js-header-search-toggle");
+    const $search = $("#headerSearch");
+    const $input = $("#headerSearchInput");
+
+    if (!$toggle.length || !$search.length) return;
+
+    function openSearch() {
+      $search.addClass("is-open");
+      $toggle.attr("aria-expanded", "true");
+
+      setTimeout(function () {
+        $input.trigger("focus");
+      }, 300);
+    }
+
+    function closeSearch() {
+      $search.removeClass("is-open");
+      $toggle.attr("aria-expanded", "false");
+    }
+
+    function toggleSearch() {
+      if ($search.hasClass("is-open")) {
+        closeSearch();
+      } else {
+        openSearch();
+      }
+    }
+
+    $toggle.on("click.headerSearch", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+      toggleSearch();
+    });
+
+    $search.on("click.headerSearch", function (e) {
+      e.stopPropagation();
+    });
+
+    $(document).on("click.headerSearch", function () {
+      closeSearch();
+    });
+
+    $(document).on("keydown.headerSearch", function (e) {
+      if (e.key === "Escape") {
+        closeSearch();
+        $toggle.trigger("focus");
+      }
     });
   }
 
   $(function () {
     bindHamburger();
     bindMainMenu();
+    bindHeaderSearch();
   });
 })(jQuery);

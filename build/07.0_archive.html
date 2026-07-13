@@ -34,9 +34,15 @@
 					<a href="#" class="header__logo">
 						<img src="images/ico/logo-header.svg" alt="logo" />
 					</a>
-					<button class="c-header__opener js-header__opener iconLink" type="button">
-						<span></span>
-					</button>
+					<div class="d-xl-none d-flex align-items-center gap-3">
+						<button class="header__icon js-header-search-toggle" type="button" aria-expanded="false" aria-controls="headerSearch" aria-label="Otevřít vyhledávání">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2a9 9 0 105.618 16.032l3.675 3.675a1 1 0 001.414-1.414l-3.675-3.675A9 9 0 0011 2zm-7 9a7 7 0 1114 0 7 7 0 01-14 0z" fill="currentColor" />
+							</svg> </button>
+						<button class="c-header__opener js-header__opener iconLink" type="button">
+							<span></span>
+						</button>
+					</div>
 					<div class="headerNav__inner">
 						<button class="headerNav__close js-header__close" type="button">
 							<span></span>
@@ -48,10 +54,10 @@
 								<a href="#">Výsledková brána</a>
 							</div>
 							<div class="d-flex align-items-center gap-3 justify-content-xl-start justify-content-center">
-								<a href="#" class="header__icon">
+								<button class="header__icon js-header-search-toggle d-xl-flex d-none" type="button" aria-expanded="false" aria-controls="headerSearch" aria-label="Otevřít vyhledávání">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<path fill-rule="evenodd" clip-rule="evenodd" d="M11 2a9 9 0 105.618 16.032l3.675 3.675a1 1 0 001.414-1.414l-3.675-3.675A9 9 0 0011 2zm-7 9a7 7 0 1114 0 7 7 0 01-14 0z" fill="currentColor" />
-									</svg> </a>
+									</svg> </button>
 								<a href="#" class="header__icon">
 									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 										<g clip-path="url(#clip0_6898_99)">
@@ -194,6 +200,17 @@
 					</div>
 				</div>
 			</div>
+			<div class="headerSearch" id="headerSearch">
+				<div class="container">
+					<form class="headerSearch__form" action="/search" method="get">
+						<input class="headerSearch__input" id="headerSearchInput" type="search" name="q" placeholder="Co hledáte?" />
+
+						<button class="button-secondary headerSearch__submit" type="submit">
+							Hledat
+						</button>
+					</form>
+				</div>
+			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
 			<section class="mb-10">
@@ -231,7 +248,7 @@
 						</button>
 					</form>
 
-					<div class="row g-6">
+					<div class="row g-sm-6 g-8">
 						<div class="col-lg-4 col-sm-6">
 							<a href="#" class="postCard">
 								<div class="postCard__img">
@@ -242,7 +259,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -259,7 +276,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -276,7 +293,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -293,7 +310,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -310,7 +327,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -332,7 +349,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -349,7 +366,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>
@@ -366,7 +383,7 @@
 									<div class="tag">Turnaje</div>
 								</div>
 								<div class="px-lg-6 px-4">
-									<div class="text-base-sm text-tertiary mb-2">dnes</div>
+									<div class="text-base-sm text-tertiary mb-1">dnes</div>
 									<h2 class="h4 text-primary">
 										Jarní liga 2026: Praha hostí rekordních 312 hráčů
 									</h2>

@@ -4,9 +4,23 @@
       <a href="#" class="header__logo">
         <img src="images/ico/logo-header.svg" alt="logo" />
       </a>
-      <button class="c-header__opener js-header__opener iconLink" type="button">
-        <span></span>
-      </button>
+      <div class="d-xl-none d-flex align-items-center gap-3">
+        <button
+          class="header__icon js-header-search-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="headerSearch"
+          aria-label="Otevřít vyhledávání"
+        >
+          {% include "@images/search.svg" %}
+        </button>
+        <button
+          class="c-header__opener js-header__opener iconLink"
+          type="button"
+        >
+          <span></span>
+        </button>
+      </div>
       <div class="headerNav__inner">
         <button class="headerNav__close js-header__close" type="button">
           <span></span>
@@ -22,9 +36,15 @@
           <div
             class="d-flex align-items-center gap-3 justify-content-xl-start justify-content-center"
           >
-            <a href="#" class="header__icon">
+            <button
+              class="header__icon js-header-search-toggle d-xl-flex d-none"
+              type="button"
+              aria-expanded="false"
+              aria-controls="headerSearch"
+              aria-label="Otevřít vyhledávání"
+            >
               {% include "@images/search.svg" %}
-            </a>
+            </button>
             <a href="#" class="header__icon">
               {% include "@images/fb.svg" %}
             </a>
@@ -155,6 +175,23 @@
           </ul>
         </nav>
       </div>
+    </div>
+  </div>
+  <div class="headerSearch" id="headerSearch">
+    <div class="container">
+      <form class="headerSearch__form" action="/search" method="get">
+        <input
+          class="headerSearch__input"
+          id="headerSearchInput"
+          type="search"
+          name="q"
+          placeholder="Co hledáte?"
+        />
+
+        <button class="button-secondary headerSearch__submit" type="submit">
+          Hledat
+        </button>
+      </form>
     </div>
   </div>
 </header>

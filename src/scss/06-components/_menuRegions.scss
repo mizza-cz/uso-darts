@@ -1,0 +1,10 @@
+.menuRegions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 12px;
+  gap: 8px 24px;
+  @include media-breakpoint-down(lg) {
+    gap: 8px 16px;
+  }
+}
