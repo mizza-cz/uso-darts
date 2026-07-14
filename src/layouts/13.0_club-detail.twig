@@ -8,7 +8,7 @@
           class="d-flex align-items-center gap-6 justify-content-between flex-wrap"
         >
           <h1 class="h2 text-secondary">
-            Detail klubu: Letka Hořice na Šumavě
+            Detail družstva: Letka Hořice na Šumavě
           </h1>
           <div class="d-flex align-items-center gap-lg-4 gap-2 flex-wrap">
             <div class="fw-bold">Hrací místo:</div>
@@ -76,14 +76,20 @@
                       <td>Říčany</td>
                     </tr>
                     <tr>
-                      <td class="fw-bold ps-xxl-10">Kategorie:</td>
-                      <td>A</td>
+                      <td class="fw-bold ps-xxl-10">Telefon:</td>
+                      <td>
+                        <a class="text-secondary" href="tel:+420777888999"
+                          >+420 777 888 999</a
+                        >
+                      </td>
                     </tr>
                     <tr>
-                      <td class="fw-bold ps-xxl-10">Klub:</td>
+                      <td class="fw-bold ps-xxl-10">E-mail:</td>
                       <td>
-                        <a href="#" class="text-secondary"
-                          >Sgt. Pepik's Band Praha</a
+                        <a
+                          href="mailto:jan.sipkarsky@example.cz"
+                          class="text-secondary"
+                          >jan.sipkarsky@example.cz</a
                         >
                       </td>
                     </tr>
@@ -115,14 +121,20 @@
                       <td>Říčany</td>
                     </tr>
                     <tr>
-                      <td class="fw-bold ps-xxl-10">Kategorie:</td>
-                      <td>A</td>
+                      <td class="fw-bold ps-xxl-10">Telefon:</td>
+                      <td>
+                        <a class="text-secondary" href="tel:+420777888999"
+                          >+420 777 888 999</a
+                        >
+                      </td>
                     </tr>
                     <tr>
-                      <td class="fw-bold ps-xxl-10">Klub:</td>
+                      <td class="fw-bold ps-xxl-10">E-mail:</td>
                       <td>
-                        <a href="#" class="text-secondary"
-                          >Sgt. Pepik's Band Praha</a
+                        <a
+                          href="mailto:jan.sipkarsky@example.cz"
+                          class="text-secondary"
+                          >jan.sipkarsky@example.cz</a
                         >
                       </td>
                     </tr>
@@ -134,7 +146,7 @@
         </div>
       </div>
 
-      <h3 class="h4 text-primary mb-6">Soupiska klubu</h3>
+      <h3 class="h4 text-primary mb-6">Soupiska družstva</h3>
       <div class="table-responsive mb-10">
         <table class="table">
           <thead>
@@ -152,7 +164,7 @@
                 <div class="d-flex align-items-center gap-3">
                   <div class="ps-md-3 pe-lg-7 pe-4">
                     <img
-                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      class="playerPhoto"
                       width="80px"
                       height="80px"
                       src="images/content/no-player.png"
@@ -175,7 +187,7 @@
                 <div class="d-flex align-items-center gap-3">
                   <div class="ps-md-3 pe-lg-7 pe-4">
                     <img
-                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      class="playerPhoto"
                       width="80px"
                       height="80px"
                       src="images/content/player.png"
@@ -204,11 +216,15 @@
           loading="lazy"
         />
       </a>
+      <h3 class="h4 text-primary mb-6">Ligová statistika</h3>
       <div class="table-responsive mb-10">
         <table class="table">
           <thead>
             <tr>
-              <th style="width: 80px" rowspan="2">Pořadí</th>
+              <th style="width: 80px" rowspan="2">
+                <div class="d-lg-block d-none">Pořadí</div>
+                <div class="d-lg-none d-block">P</div>
+              </th>
               <th rowspan="2" class="text-start">Hráč</th>
               <th style="width: 80px" class="text-center" rowspan="2">LKH</th>
               <th style="width: 320px" colspan="4" class="text-center">
@@ -234,7 +250,7 @@
                 <div class="d-flex align-items-center gap-3">
                   <div class="ps-md-3 pe-lg-7 pe-4">
                     <img
-                      class="rounded-circle object-fit-cover object-position-top bg-gray"
+                      class="playerPhoto"
                       width="80px"
                       height="80px"
                       src="images/content/player.png"
